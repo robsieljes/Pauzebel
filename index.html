@@ -23,7 +23,7 @@
 			</ul>
 		</div>
 		
-		<div id="logo">Pauzebel</div>
+		<div id="logo"></div>
 	</div>
 
 
@@ -33,31 +33,40 @@
 		<pre>
 Naam:	<input type="text" name="name"><br />
 Tijd:		<input type="time" name="time"><br />
-Audio:	<input type="file" name="wav" accept="audio/*" name="audio">
+Audio:	<input type="file" name="wav" accept="audio/*" name="audio"> <br />
+Tijd:		<select name="mydropdown">
+				<option value="Mo">Maandag</option>
+				<option value="Tu">Dinsdag</option>
+				<option value="We">Woensdag</option>
+				<option value="Th">Donderdag</option>
+				<option value="Fr">Vrijdag</option>
+				<option value="Sa">Zaterdag</option>
+				<option value="Su">Zondag</option>
+			</select>
 		</pre>
 
-		<select name="mydropdown">
-			<option value="Mo">Maandag</option>
-			<option value="Tu">Dinsdag</option>
-			<option value="We">Woensdag</option>
-		</select>
+			<div class="actions">
+		        <button class='plus'>Plus</button>
+				<button class='minus'>Min</button>
+		    </div>
+
+		<input type="submit" value="Opslaan">
 		</form>
-		    <div class="actions">
-        <button class='plus'>Plus</button>
-		<button class='minus'>Min</button>
-    </div>
-			<div class="weekday">Ma</div>
+	
+
+
+<!--			<div class="weekday">Ma</div>
 			<div class="weekday">Di</div>
 			<div class="weekday">Wo</div>
 			<div class="weekday">Do</div>
 			<div class="weekday">Vr</div>
 			<div class="weekday">Za</div>
-			<div class="weekday">Zo</div>
+			<div class="weekday">Zo</div> -->
 
 </div>
    
 
-
+<div id="ellage"></div>
 
 </body>
 
