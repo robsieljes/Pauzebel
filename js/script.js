@@ -11,12 +11,10 @@ function clone(){
         .attr("id", "container" +  cloneIndex)
         .find("*")
         .each(function() {
-
             var id = this.id || "";
             var match = id.match(regex) || [];
             if (match.length == 3) {
                 this.id = match[1] + (cloneIndex);
-
             }
         })
 
@@ -30,7 +28,7 @@ function remove(){
 		alert('Deze kun je niet verwijderen')
 	} else{
     $(this).parents(".layout").remove();
-}
+	}
 }
 $("button.plus").on("click", clone);
 
