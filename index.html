@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pauzebel</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<link rel="stylesheet" href="style/style.css">
+	<script src="js/script.js"></script>
+	<script src="js/jquery.js"></script>
 </head>
 <body>
 	
@@ -25,12 +26,26 @@
 		<div id="logo">Pauzebel</div>
 	</div>
 
-<div id="total">
-	<div id="container">
-		<h1>Bel 1</h1>
-			Tijd: <input type="time">
-		<div id="sound">Belgeluid</div>
-		<div id="weekdays">
+
+
+<div id="container" class="layout">
+		<form action="">
+		<pre>
+Naam:	<input type="text" name="name"><br />
+Tijd:		<input type="time" name="time"><br />
+Audio:	<input type="file" name="wav" accept="audio/*" name="audio">
+		</pre>
+
+		<select name="mydropdown">
+			<option value="Mo">Maandag</option>
+			<option value="Tu">Dinsdag</option>
+			<option value="We">Woensdag</option>
+		</select>
+		</form>
+		    <div class="actions">
+        <button class='plus'>Plus</button>
+		<button class='minus'>Min</button>
+    </div>
 			<div class="weekday">Ma</div>
 			<div class="weekday">Di</div>
 			<div class="weekday">Wo</div>
@@ -38,10 +53,12 @@
 			<div class="weekday">Vr</div>
 			<div class="weekday">Za</div>
 			<div class="weekday">Zo</div>
-		</div>
 
-		<div id="plus">+</div>
-	</div>
 </div>
+   
+
+
+
 </body>
+
 </html>
